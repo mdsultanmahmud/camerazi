@@ -123,3 +123,28 @@
     text-decoration: none;
     color: white;
 }
+
+
+
+/* register page design starts here  */
+.register-container{
+    background-image: url(../assets/register.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.form-container{
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+}
+.form-container input{
+    font-size: 1.2rem;
+}
+.form-container input::placeholder{
+    color: gray;
+}
