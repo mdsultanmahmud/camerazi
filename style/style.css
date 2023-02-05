@@ -1,61 +1,77 @@
-.menu-style{
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-style {
     background-color: red;
 
 }
-.home-section{
-  position: relative;
-}
-.home-description{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 90vh; 
+
+.home-section {
+    position: relative;
+    height: 100vh;
     width: 100vw;
-    background: linear-gradient(
-        to right,
-        #ab1a36c2 20%,
-        #ab1a3696 50%,
-        rgba(250, 250, 250, 0.1) 80%,
-        rgba(250, 250, 250, 0) 100%
-      );
 }
-.home-description li{
+.home-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
+    background: linear-gradient(to right,
+            #ab1a36c2 20%,
+            #ab1a3696 50%,
+            rgba(250, 250, 250, 0.1) 80%,
+            rgba(250, 250, 250, 0) 100%);
+}
+
+.home-description li {
     color: white;
     font-size: 1.5rem;
     font-weight: 600;
 }
-.home-btn{
+
+.home-btn {
     font-weight: 700;
     font-size: 24px;
     color: #ffffff;
     width: 330px;
-    margin-top: 28px;
     background: #ed2e52;
     border-radius: 15px;
     height: 54px;
     border: none;
     cursor: pointer;
 }
-.home-btn:focus{
+
+.home-btn:hover {
     background-color: transparent;
     color: black;
+    border: 1px solid black;
 }
-.home-section video{
-    height: 90vh; 
+
+.home-section video {
+    height: 90vh;
     width: 100vw;
 }
 
-.job-section button{
+.job-section button {
     color: white;
     font-size: 1.3rem;
 }
 
 
 /* equipment categories section design  */
-.equipment-categories-container{
+.equipment-categories-container {
     margin: 4rem 0;
 }
-.equipment-categories-container .item{
+
+.equipment-categories-container .item {
     background: #fffdfd;
     box-shadow: -2px -1px 19px 1px rgb(0 0 0 / 25%) !important;
     border-radius: 8px;
@@ -66,14 +82,16 @@
     margin-left: 20px;
     margin-right: 20px;
 }
-.equipment-categories-container .item img{
+
+.equipment-categories-container .item img {
     width: 100px !important;
     height: 90px;
     display: block;
     margin: 1rem auto;
 }
-.equipment-categories-container .item h4{
-   font-size: 1.5rem;
-   color: gray;
+
+.equipment-categories-container .item h4 {
+    font-size: 1.5rem;
+    color: gray;
 
 }
