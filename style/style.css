@@ -1,0 +1,46 @@
+.menu-style{
+    background-color: red;
+
+}
+.home-section{
+  position: relative;
+}
+.home-description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90vh; 
+    width: 100vw;
+    background: linear-gradient(
+        to right,
+        #ab1a36c2 20%,
+        #ab1a3696 50%,
+        rgba(250, 250, 250, 0.1) 80%,
+        rgba(250, 250, 250, 0) 100%
+      );
+}
+.home-description li{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.home-btn{
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    width: 330px;
+    margin-top: 28px;
+    background: #ed2e52;
+    border-radius: 15px;
+    height: 54px;
+    border: none;
+    cursor: pointer;
+}
+.home-btn:focus{
+    background-color: transparent;
+    color: black;
+}
+.home-section video{
+    height: 90vh; 
+    width: 100vw;
+}
