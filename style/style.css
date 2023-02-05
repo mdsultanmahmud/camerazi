@@ -134,6 +134,19 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.login-container{
+    background-image: url(../assets/login.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    place-items: center;
+
 }
 
 .form-container{
@@ -144,6 +157,7 @@
 }
 .form-container input{
     font-size: 1.2rem;
+    color: white;
 }
 .form-container input::placeholder{
     color: gray;
