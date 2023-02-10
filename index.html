@@ -24,7 +24,6 @@
 
 <body>
   <!-- navbar section design start -->
-  <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand bg-white" href="#">
@@ -61,7 +60,7 @@
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Blogs
-              </a> 
+              </a>
               <ul class="dropdown-menu bg-dark">
                 <li><a class="dropdown-item text-white active" href="#">Action</a></li>
                 <li><a class="dropdown-item text-white" href="#">Another action</a></li>
@@ -105,13 +104,13 @@
       </div>
     </nav>
     <!-- navbar section design end -->
-  </header>
 
 
   <!-- home section design start  -->
   <section class="home-section">
     <video width="100%" height="100%" autoplay muted loop>
-      <source class="home-back-video" src="https://staging.camerazi.com/uploads/banner-video/61e66dfbe4f0f.mp4" type="video/mp4">
+      <source class="home-back-video" src="https://staging.camerazi.com/uploads/banner-video/61e66dfbe4f0f.mp4"
+        type="video/mp4">
     </video>
     <div class="home-description">
       <h1 class="home-title text-white fw-bold">HIRE THE BEST <br> TALENT FOR <br> YOUR EVENTS <br> ONLINE!</h1>
@@ -120,7 +119,7 @@
         <li>Browse and apply Assignment</li>
         <li>Sale/ Rent an Equiqment</li>
       </ul>
-      <button class="home-btn">Post Your Requirement</button>
+      <button class="btn btn-danger">Post Your Requirement <i class="fa-solid fa-arrow-right"></i></button>
     </div>
 
   </section>
@@ -484,7 +483,7 @@
   <!-- testimonials section starts here  -->
   <section class="p-3 my-4">
     <h1 class="text-center text-danger fw-bold">Testimonials</h1>
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <div id="carouselExampleCaptions" class="carousel slide ">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-danger"
           aria-current="true" aria-label="Slide 1"></button>
@@ -660,6 +659,7 @@
   <footer class="p-5 text-center bg-dark">
     <p class="text-white">@ 2023 Camerazi. All Rights Reserved.</p>
     <p class="text-white">Design By- <b>Papaya Coders Pvt. Ltd.</b></p>
+    <button id="scrollToTopBtn" class="scroll-btn"><i class="fa-solid fa-arrow-up"></i></button>
   </footer>
   <!-- footer section ends here  -->
   <!-- bootstrap cdn link  -->
@@ -693,6 +693,28 @@
         }
       }
     })
+
+    // working with scroll to top button 
+    const btn = document.getElementById("scrollToTopBtn");
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    btn.addEventListener("click", topFunction);
+
   </script>
 </body>
 

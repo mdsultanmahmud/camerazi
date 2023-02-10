@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* nav section design starts here  */
 nav{
     background:#ed2e52;
@@ -41,22 +44,9 @@ nav ul li a{
     font-weight: 600;
 }
 
-.home-btn {
-    font-weight: 700;
-    font-size: 24px;
-    color: #ffffff;
-    background: #ed2e52;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-    padding:  0.3rem 1rem;
-}
 
 @media screen and (max-width:668px) {
     .home-title{
-        font-size: .8rem;
-    }
-    .home-btn{
         font-size: .8rem;
     }
 }
@@ -174,4 +164,18 @@ nav ul li a{
 }
 .form-container input::placeholder{
     color: gray;
+}
+
+.scroll-btn{
+    width: 2rem;
+    height: 2rem;
+    background-color: #ed2e52;
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 2;
+    bottom: 2rem;
+    right:2rem;
+    border: 1px solid white;
 }
