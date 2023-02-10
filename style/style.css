@@ -166,6 +166,9 @@ nav ul li a{
     color: gray;
 }
 
+footer{
+    position: relative;
+}
 .scroll-btn{
     width: 2rem;
     height: 2rem;
@@ -176,6 +179,9 @@ nav ul li a{
     position: fixed;
     z-index: 2;
     bottom: 2rem;
-    right:2rem;
+    right: 2rem;
     border: 1px solid white;
+}
+body{
+    background-color: black;
 }
