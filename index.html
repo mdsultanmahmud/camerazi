@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
     integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- aos cdn  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- fontawesome link  -->
   <link rel="stylesheet" href="https://kit.fontawesome.com/bc49ce5c52.css" crossorigin="anonymous">
@@ -24,86 +26,83 @@
 
 <body>
   <!-- navbar section design start -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand bg-white" href="#">
-          <img src="assets/logo.png" alt="Company Logo" width="80" height="50">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa-sharp fa-solid fa-bars text-white fs-1"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">How It Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Browse Jobs</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Equipments
-              </a>
-              <ul class="dropdown-menu bg-dark">
-                <li><a class="dropdown-item text-white active" href="#">Action</a></li>
-                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
-                <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item text-white" href="#">Separated Link</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Blogs
-              </a>
-              <ul class="dropdown-menu bg-dark">
-                <li><a class="dropdown-item text-white active" href="#">Action</a></li>
-                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
-                <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item text-white" href="#">Separated Link</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Plans
-              </a>
-              <ul class="dropdown-menu bg-dark">
-                <li><a class="dropdown-item text-white active" href="#">Action</a></li>
-                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
-                <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item text-white" href="#">Separated Link</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/register.html">Register</a>
-            </li>
-            <li class="nav-item login-btn">
-              <a class="nav-link" href="pages/login.html">Login</a>
-            </li>
-          </ul>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand bg-white" href="#">
+        <img src="assets/logo.png" alt="Company Logo" width="80" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-sharp fa-solid fa-bars text-white fs-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Browse Jobs</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Equipments
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white active" href="#">Action</a></li>
+              <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+              <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-white" href="#">Separated Link</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blogs
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white active" href="#">Action</a></li>
+              <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+              <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-white" href="#">Separated Link</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Plans
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-white active" href="#">Action</a></li>
+              <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+              <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-white" href="#">Separated Link</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/register.html">Register</a>
+          </li>
+          <li class="nav-item login-btn">
+            <a class="nav-link" href="pages/login.html">Login</a>
+          </li>
+        </ul>
 
-        </div>
       </div>
-    </nav>
-    <!-- navbar section design end -->
+    </div>
+  </nav>
+  <!-- navbar section design end -->
 
 
   <!-- home section design start  -->
@@ -112,7 +111,7 @@
       <source class="home-back-video" src="https://staging.camerazi.com/uploads/banner-video/61e66dfbe4f0f.mp4"
         type="video/mp4">
     </video>
-    <div class="home-description">
+    <div class="home-description" data-aos="">
       <h1 class="home-title text-white fw-bold">HIRE THE BEST <br> TALENT FOR <br> YOUR EVENTS <br> ONLINE!</h1>
       <ul class="my-3 d-none d-md-block">
         <li>Post a job and hire a talent</li>
@@ -128,7 +127,7 @@
   <section class="my-5 p-3 categories">
     <h1 class="text-center text-danger">GET WORK DONE IN OVER FOUR CATEGORIES</h1>
     <div class="row gy-5 my-3">
-      <div class="col-sm-12 col-md-6 d-flex justify-content-between align-items-center gap-3">
+      <div class="col-sm-12 col-md-6 d-flex justify-content-between align-items-center gap-3" data-aos="zoom-in">
         <div>
           <img src="assets/categories-1.png" alt="">
         </div>
@@ -139,7 +138,7 @@
           <button class="btn btn-secondary">Read More</button>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 d-flex justify-content-between align-items-center gap-3">
+      <div class="col-sm-12 col-md-6 d-flex justify-content-between align-items-center gap-3" data-aos="zoom-in">
         <div>
           <img src="assets/categories-2.png" alt="">
         </div>
@@ -150,7 +149,7 @@
           <button class="btn btn-secondary">Read More</button>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 d-flex justify-content-between align-items-center gap-3">
+      <div class="col-sm-12 col-md-6 d-flex justify-content-between align-items-center gap-3" data-aos="zoom-in">
         <div>
           <img src="assets/categories-3.png" alt="">
         </div>
@@ -161,7 +160,7 @@
           <button class="btn btn-secondary">Read More</button>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 d-flex justify-content-between align-items-center gap-3">
+      <div class="col-sm-12 col-md-6 d-flex justify-content-between align-items-center gap-3" data-aos="zoom-in">
         <div>
           <img src="assets/categories-4.png" alt="">
         </div>
@@ -176,7 +175,7 @@
   </section>
   <!-- categories section ends here  -->
   <!-- latest job section starts here  -->
-  <section class="job-section bg-danger p-md-1">
+  <section class="job-section bg-danger p-md-1" data-aos="fade-up">
     <h1 class="text-white text-center fw-bold my-4">Latest Jobs</h1>
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-inner">
@@ -335,22 +334,22 @@
   <!-- latest job section end here  -->
   <!-- Equipments categories -->
   <section class="equipment-categories-container">
-    <h2 class="text-uppercase text-danger text-center fw-bold my-4">Equipment Provided</h2>
-    <h2 class="fw-bold text-danger fs-2 my-3">Categories</h2>
+    <h2 class="text-uppercase text-danger text-center fw-bold my-4" data-aos="zoom-in">Equipment Provided</h2>
+    <h2 class="fw-bold text-danger fs-2 my-3" data-aos="fade-right">Categories</h2>
     <div class="owl-carousel owl-theme p-3">
-      <div class="item shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+      <div class="item shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="flip-left">
         <img src="assets/lens.png" alt="">
         <h4>Lens</h4>
       </div>
-      <div class="item shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+      <div class="item shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="flip-left">
         <img src="assets/video.png" alt="">
         <h4>Monopad</h4>
       </div>
-      <div class="item shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+      <div class="item shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="flip-left">
         <img src="assets/drone.png" alt="">
         <h4>Drone</h4>
       </div>
-      <div class="item shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+      <div class="item shadow-sm p-3 mb-5 bg-body-tertiary rounded" data-aos="flip-left">
         <img src="assets/cam.png" alt="">
         <h4>DSLR</h4>
       </div>
@@ -358,30 +357,30 @@
   </section>
   <!-- requirement section starts here  -->
   <section class="bg-danger p-3 text-center">
-    <h1 class="text-center text-white fw-bold my-3">Want Things Done ?</h1>
+    <h1 class="text-center text-white fw-bold my-3" data-aos="fade-down">Want Things Done ?</h1>
     <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+      <div class="col-sm-12 col-md-6 col-lg-4 p-3" data-aos="zoom-in">
         <img src="assets/things-done-1.png" alt="">
         <h3 class="text-white fs-3">Post Requirement</h3>
         <p class="text-white">Easily for free post a job.Just provide a title, description, and budegt, and you'll
           receive Quotation in a
           regarding the job</p>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+      <div class="col-sm-12 col-md-6 col-lg-4 p-3" data-aos="zoom-in">
         <img src="assets/things-done-2.png" alt="">
         <h3 class="text-white fs-3">Select Service</h3>
         <p class="text-white">Nothing is too large or small to do. We have independent Service Providers for jobs of any
           size and budget,
           covering 4 talents. Any work can be completed</p>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+      <div class="col-sm-12 col-md-6 col-lg-4 p-3" data-aos="zoom-in">
         <img src="assets/things-done-3.png" alt="">
         <h3 class="text-white fs-3">Pay Securely</h3>
         <p class="text-white">Only pay for work when it has been completed and you're 100% satisfied with the Quality
           using our milestone
           payment system</p>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+      <div class="col-sm-12 col-md-6 col-lg-4 p-3" data-aos="zoom-in">
         <img src="assets/things-done-4.png" alt="">
         <h3 class="text-white fs-3">We're Here To Help</h3>
         <p class="text-white">Our talented team of recrutiers can help you find the best Service Provider for the job
@@ -393,27 +392,27 @@
   <!-- requirement section end here  -->
   <!-- our portal provides section starts here  -->
   <section class="my-5 p-3">
-    <h1 class="text-center text-danger fw-bold my-3">Our Portal Provides</h1>
+    <h1 class="text-center text-danger fw-bold my-3" data-aos="zoom-in">Our Portal Provides</h1>
     <div class="row text-center">
-      <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+      <div class="col-sm-12 col-md-6 col-lg-4 p-3" data-aos="flip-right">
         <img src="assets/portal-provides-1.png" alt="">
         <h3>Post Requirement</h3>
         <p>Easily for free post a job.Just provide a title, description, and budegt, and you'll receive Quotation in a
           regarding the job</p>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+      <div class="col-sm-12 col-md-6 col-lg-4 p-3" data-aos="flip-right">
         <img src="assets/portal-provides-2.png" alt="">
         <h3>Select Service</h3>
         <p>Nothing is too large or small to do. We have independent Service Providers for jobs of any size and budget,
           covering 4 talents. Any work can be completed</p>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+      <div class="col-sm-12 col-md-6 col-lg-4 p-3" data-aos="flip-right">
         <img src="assets/portal-provides-3.png" alt="">
         <h3>Pay Securely</h3>
         <p>Only pay for work when it has been completed and you're 100% satisfied with the Quality using our milestone
           payment system</p>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+      <div class="col-sm-12 col-md-6 col-lg-4 p-3" data-aos="flip-right">
         <img src="assets/portal-provides-4.png" alt="">
         <h3>We're Here To Help</h3>
         <p>Our talented team of recrutiers can help you find the best Service Provider for the job even manage the
@@ -424,9 +423,9 @@
   <!-- our portal provides section ends here  -->
   <!-- blogs section starts here  -->
   <section class="my-4 blogs-container p-3 bg-danger">
-    <h1 class="text-center text-white my-4">Blogs</h1>
+    <h1 class="text-center text-white my-4" data-aos="fade-up">Blogs</h1>
     <div class="row g-3">
-      <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
         <div class="card">
           <img src="assets/blogs-1.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -438,7 +437,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
         <div class="card">
           <img src="assets/blogs-2.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -450,7 +449,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
         <div class="card">
           <img src="assets/blogs-3.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -462,7 +461,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
         <div class="card">
           <img src="assets/blogs-4.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -607,7 +606,7 @@
   <!-- FAQ section ends here  -->
 
   <!-- new letter section starts here  -->
-  <section class="text-center my-5">
+  <section class="text-center my-5" data-aos="fade-right" data-aos-duration="2000">
     <h1 class="text-center text-danger my-4 fs-1 fw-bold">Subscribe To Our News Letter</h1>
     <div class="input-group mb-3" style="width: 50%; margin: 0 auto;">
       <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
@@ -619,7 +618,7 @@
   <!-- new letter section ends here  -->
   <!-- quick links section starts here  -->
   <!-- quick links section starts here  -->
-  <section class="mt-5 p-4 bg-secondary text-white quick-links">
+  <section class="mt-5 p-4 bg-secondary text-white quick-links" data-aos="fade-left" data-aos-duration="2000">
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-3">
         <img src="assets/logo.png" class="img-fluid" alt="">
@@ -674,10 +673,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- aos cdn  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!-- fontawesome cdn  -->
   <script src="https://kit.fontawesome.com/bc49ce5c52.js" crossorigin="anonymous"></script>
   <!-- starting owl carousel -->
   <script>
+    // owl-carousel 
     $('.owl-carousel').owlCarousel({
       loop: true,
       margin: 10,
@@ -694,6 +697,8 @@
       }
     })
 
+    // initial aos 
+    AOS.init();
     // working with scroll to top button 
     const btn = document.getElementById("scrollToTopBtn");
 
